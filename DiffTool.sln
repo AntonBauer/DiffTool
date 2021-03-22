@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Algorithms.EditDistance", "Algorithms.EditDistance\Algorithms.EditDistance.fsproj", "{BD169EBC-F5A6-4A43-92FF-212C1E640CB8}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Algorithms.GraphShortestPath", "Algorithms.GraphShortestPath\Algorithms.GraphShortestPath.fsproj", "{FA78200C-79BA-4FA1-8FE6-5DEF11E0AF73}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DiffTool.Cli", "DiffTool.Cli\DiffTool.Cli.fsproj", "{1BD24C5A-F992-47BA-84FB-BC36052BAE59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,5 +20,43 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD169EBC-F5A6-4A43-92FF-212C1E640CB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD169EBC-F5A6-4A43-92FF-212C1E640CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD169EBC-F5A6-4A43-92FF-212C1E640CB8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BD169EBC-F5A6-4A43-92FF-212C1E640CB8}.Debug|x64.Build.0 = Debug|Any CPU
+		{BD169EBC-F5A6-4A43-92FF-212C1E640CB8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BD169EBC-F5A6-4A43-92FF-212C1E640CB8}.Debug|x86.Build.0 = Debug|Any CPU
+		{BD169EBC-F5A6-4A43-92FF-212C1E640CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD169EBC-F5A6-4A43-92FF-212C1E640CB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD169EBC-F5A6-4A43-92FF-212C1E640CB8}.Release|x64.ActiveCfg = Release|Any CPU
+		{BD169EBC-F5A6-4A43-92FF-212C1E640CB8}.Release|x64.Build.0 = Release|Any CPU
+		{BD169EBC-F5A6-4A43-92FF-212C1E640CB8}.Release|x86.ActiveCfg = Release|Any CPU
+		{BD169EBC-F5A6-4A43-92FF-212C1E640CB8}.Release|x86.Build.0 = Release|Any CPU
+		{FA78200C-79BA-4FA1-8FE6-5DEF11E0AF73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA78200C-79BA-4FA1-8FE6-5DEF11E0AF73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA78200C-79BA-4FA1-8FE6-5DEF11E0AF73}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FA78200C-79BA-4FA1-8FE6-5DEF11E0AF73}.Debug|x64.Build.0 = Debug|Any CPU
+		{FA78200C-79BA-4FA1-8FE6-5DEF11E0AF73}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FA78200C-79BA-4FA1-8FE6-5DEF11E0AF73}.Debug|x86.Build.0 = Debug|Any CPU
+		{FA78200C-79BA-4FA1-8FE6-5DEF11E0AF73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA78200C-79BA-4FA1-8FE6-5DEF11E0AF73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA78200C-79BA-4FA1-8FE6-5DEF11E0AF73}.Release|x64.ActiveCfg = Release|Any CPU
+		{FA78200C-79BA-4FA1-8FE6-5DEF11E0AF73}.Release|x64.Build.0 = Release|Any CPU
+		{FA78200C-79BA-4FA1-8FE6-5DEF11E0AF73}.Release|x86.ActiveCfg = Release|Any CPU
+		{FA78200C-79BA-4FA1-8FE6-5DEF11E0AF73}.Release|x86.Build.0 = Release|Any CPU
+		{1BD24C5A-F992-47BA-84FB-BC36052BAE59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BD24C5A-F992-47BA-84FB-BC36052BAE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BD24C5A-F992-47BA-84FB-BC36052BAE59}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1BD24C5A-F992-47BA-84FB-BC36052BAE59}.Debug|x64.Build.0 = Debug|Any CPU
+		{1BD24C5A-F992-47BA-84FB-BC36052BAE59}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1BD24C5A-F992-47BA-84FB-BC36052BAE59}.Debug|x86.Build.0 = Debug|Any CPU
+		{1BD24C5A-F992-47BA-84FB-BC36052BAE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BD24C5A-F992-47BA-84FB-BC36052BAE59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BD24C5A-F992-47BA-84FB-BC36052BAE59}.Release|x64.ActiveCfg = Release|Any CPU
+		{1BD24C5A-F992-47BA-84FB-BC36052BAE59}.Release|x64.Build.0 = Release|Any CPU
+		{1BD24C5A-F992-47BA-84FB-BC36052BAE59}.Release|x86.ActiveCfg = Release|Any CPU
+		{1BD24C5A-F992-47BA-84FB-BC36052BAE59}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
