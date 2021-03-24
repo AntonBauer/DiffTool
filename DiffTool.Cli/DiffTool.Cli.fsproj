@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Algorithms.EditDistance\Algorithms.EditDistance.fsproj" />
+    <ProjectReference Include="..\DiffTool.Services\DiffTool.Services.fsproj" />
   </ItemGroup>
 
 </Project>

@@ -16,7 +16,7 @@ namespace Algorithms.EditDistance
        | true -> 0
        | false -> substituteCost
 
-    let private calculateCellValue (first: 'a []) second diff insertCost deleteCost calculateSubstituteCost i j =
+    let private calculateCellValue (first: 'a []) second insertCost deleteCost calculateSubstituteCost diff i j =
       Array.min [|
         Array2D.get diff (i-1) j + insertCost
         Array2D.get diff i (j-1) + deleteCost
@@ -25,16 +25,16 @@ namespace Algorithms.EditDistance
 
     let private initCell diff cellValueCalculator i j _ =
         match i = 0 || j = 0 with 
-        | true -> ignore()
-        | false ->
-          cellValueCalculator i j
-          |> Array2D.set diff i j
+          | true -> ignore()
+          | false ->
+            cellValueCalculator diff i j
+            |> Array2D.set diff i j
 
     let buildDifferenceMatrix insertCost deleteCost substituteCost firstArray secondArray =
       let diff = initDiff firstArray secondArray
       
       calculateSubstituteCost substituteCost
-      |> calculateCellValue firstArray secondArray diff insertCost deleteCost
+      |> calculateCellValue firstArray secondArray insertCost deleteCost
       |> initCell diff
       |> Array2D.iteri <| diff
       

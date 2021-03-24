@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DiffTool.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Algorithms.EditDistance\Algorithms.EditDistance.fsproj" />
+    <ProjectReference Include="..\Algorithms.Graphs.ShortestPath\Algorithms.Graphs.ShortestPath.fsproj" />
+    <ProjectReference Include="..\Algorithms.Graphs.Types\Algorithms.Graphs.Types.fsproj" />
+  </ItemGroup>
+</Project>
