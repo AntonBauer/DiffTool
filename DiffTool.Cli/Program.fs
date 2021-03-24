@@ -12,6 +12,6 @@ let private printItem _ j item =
 
 [<EntryPoint>]
 let main argv =
-    WagnerFisher.buildDifferenceMatrix (Seq.toArray "Kitten") (Seq.toArray "Sitting")
+    WagnerFisher.buildDifferenceMatrix 1 1 1 (Seq.toArray "Kitten") (Seq.toArray "Sitting")
     |> Array2D.iteri printItem
     0
