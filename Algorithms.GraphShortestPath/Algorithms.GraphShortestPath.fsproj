@@ -1,10 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
+    <ProjectReference Include="..\Algorithms.Graphs.Types\Algorithms.Graphs.Types.fsproj" />
   </ItemGroup>
-
+  <ItemGroup>
+    <Compile Include="DijkstraAlgorithm.fs" />
+  </ItemGroup>
 </Project>

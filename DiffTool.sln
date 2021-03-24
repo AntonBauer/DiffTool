@@ -9,6 +9,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Algorithms.GraphShortestPat
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DiffTool.Cli", "DiffTool.Cli\DiffTool.Cli.fsproj", "{1BD24C5A-F992-47BA-84FB-BC36052BAE59}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Algorithms.Graphs.Types", "Algorithms.Graphs.Types\Algorithms.Graphs.Types.fsproj", "{B0F5C3FF-CF0B-49B3-83AC-25E5555011E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{1BD24C5A-F992-47BA-84FB-BC36052BAE59}.Release|x64.Build.0 = Release|Any CPU
 		{1BD24C5A-F992-47BA-84FB-BC36052BAE59}.Release|x86.ActiveCfg = Release|Any CPU
 		{1BD24C5A-F992-47BA-84FB-BC36052BAE59}.Release|x86.Build.0 = Release|Any CPU
+		{B0F5C3FF-CF0B-49B3-83AC-25E5555011E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0F5C3FF-CF0B-49B3-83AC-25E5555011E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0F5C3FF-CF0B-49B3-83AC-25E5555011E8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B0F5C3FF-CF0B-49B3-83AC-25E5555011E8}.Debug|x64.Build.0 = Debug|Any CPU
+		{B0F5C3FF-CF0B-49B3-83AC-25E5555011E8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B0F5C3FF-CF0B-49B3-83AC-25E5555011E8}.Debug|x86.Build.0 = Debug|Any CPU
+		{B0F5C3FF-CF0B-49B3-83AC-25E5555011E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0F5C3FF-CF0B-49B3-83AC-25E5555011E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0F5C3FF-CF0B-49B3-83AC-25E5555011E8}.Release|x64.ActiveCfg = Release|Any CPU
+		{B0F5C3FF-CF0B-49B3-83AC-25E5555011E8}.Release|x64.Build.0 = Release|Any CPU
+		{B0F5C3FF-CF0B-49B3-83AC-25E5555011E8}.Release|x86.ActiveCfg = Release|Any CPU
+		{B0F5C3FF-CF0B-49B3-83AC-25E5555011E8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
