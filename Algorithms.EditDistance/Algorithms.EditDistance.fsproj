@@ -6,4 +6,8 @@
   <ItemGroup>
     <Compile Include="WagnerFisherAlgorithm.fs" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FunctionalUtils\FunctionalUtils.fsproj" />
+  </ItemGroup>
 </Project>

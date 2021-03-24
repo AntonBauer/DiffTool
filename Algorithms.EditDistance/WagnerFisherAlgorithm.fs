@@ -1,5 +1,6 @@
 namespace Algorithms.EditDistance
   module WagnerFisher =
+    open Utils
 
     let private diffInitializer i j =
       match (i, j) with
@@ -36,6 +37,6 @@ namespace Algorithms.EditDistance
       calculateSubstituteCost substituteCost
       |> calculateCellValue firstArray secondArray insertCost deleteCost
       |> initCell diff
-      |> Array2D.iteri <| diff
+      |> flip Array2D.iteri diff
       
       diff
