@@ -19,8 +19,8 @@ namespace Algorithms.EditDistance
 
     let private calculateCellValue (first: 'a []) second insertCost deleteCost calculateSubstituteCost diff i j =
       Array.min [|
-        Array2D.get diff (i-1) j + insertCost
-        Array2D.get diff i (j-1) + deleteCost
+        Array2D.get diff (i-1) j + deleteCost
+        Array2D.get diff i (j-1) + insertCost
         Array2D.get diff (i-1) (j-1) + calculateSubstituteCost (Array.get first (i-1)) (Array.get second (j-1))
       |]
 
