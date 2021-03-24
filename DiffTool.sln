@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Algorithms.EditDistance", "Algorithms.EditDistance\Algorithms.EditDistance.fsproj", "{BD169EBC-F5A6-4A43-92FF-212C1E640CB8}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Algorithms.GraphShortestPath", "Algorithms.GraphShortestPath\Algorithms.GraphShortestPath.fsproj", "{FA78200C-79BA-4FA1-8FE6-5DEF11E0AF73}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Algorithms.Graphs.ShortestPath", "Algorithms.Graphs.ShortestPath\Algorithms.Graphs.ShortestPath.fsproj", "{FA78200C-79BA-4FA1-8FE6-5DEF11E0AF73}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DiffTool.Cli", "DiffTool.Cli\DiffTool.Cli.fsproj", "{1BD24C5A-F992-47BA-84FB-BC36052BAE59}"
 EndProject

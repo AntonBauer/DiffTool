@@ -14,7 +14,6 @@ module Dijkstra =
 
   let findShortestPath graph startPosition endPosition =
     let isValid = isPositionValid graph
-    if startPosition |> isValid && endPosition |> isValid then
-      Some (shortestPath graph startPosition endPosition)
-    else
-      None
+    match startPosition |> isValid && endPosition |> isValid with
+      | true -> Some (shortestPath graph startPosition endPosition)
+      | false  -> None
