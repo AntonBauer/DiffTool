@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DiffTool.Services\DiffTool.Services.fsproj" />
+    <ProjectReference Include="..\Algorithms.MaseRouting\Algorithms.MaseRouting.fsproj" />
   </ItemGroup>
 
 </Project>

@@ -7,7 +7,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Algorithms.EditDistance\Algorithms.EditDistance.fsproj" />
-    <ProjectReference Include="..\Algorithms.Graphs.ShortestPath\Algorithms.Graphs.ShortestPath.fsproj" />
-    <ProjectReference Include="..\Algorithms.Graphs.Types\Algorithms.Graphs.Types.fsproj" />
+    <ProjectReference Include="..\Algorithms.MaseRouting\Algorithms.MaseRouting.fsproj" />
   </ItemGroup>
 </Project>
