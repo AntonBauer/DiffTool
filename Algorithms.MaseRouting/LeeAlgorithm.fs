@@ -1,23 +1,19 @@
 namespace Algorithms.MazeRouting
   module LeeAlgorithm =
+    open Utils
     open Types
 
-    let private isPointValid maze point =
+    let private isInside maze point =
       point.X >= 0
       && Array2D.length1 maze > point.X
       && point.Y >= 0
       && Array2D.length2 maze > point.Y
 
-    let private arePointsInMaze maze from finish =
-      let isValid = isPointValid maze
-      (isValid from, isValid finish)
-      ||> (&&)
-
-    let private extractNeighbours extractValue currentPosition =
+    let private extractNeighbours extractor currentPosition =
       (
-        extractValue (currentPosition.X - 1) currentPosition.Y,
-        extractValue currentPosition.X (currentPosition.Y - 1),
-        extractValue (currentPosition.X - 1) (currentPosition.Y - 1)
+        extractor (currentPosition.X - 1) currentPosition.Y,
+        extractor currentPosition.X (currentPosition.Y - 1),
+        extractor (currentPosition.X - 1) (currentPosition.Y - 1)
       )
 
     let private determineNext currentPosition extractNeighbours =
@@ -28,21 +24,18 @@ namespace Algorithms.MazeRouting
       elif min = left then {currentPosition with Y = currentPosition.Y - 1}
       else {currentPosition with X = currentPosition.X - 1; Y = currentPosition.Y - 1}
 
-
-    let findNextPoint extractValue currentPosition =
-      extractNeighbours extractValue
+    let findNextPoint extractor currentPosition =
+      extractNeighbours extractor
       |> determineNext currentPosition
 
-    let rec private findPath maze finish currentPosition path =
-      let mazeValueExtractor = Array2D.get maze
-
+    let rec private trace mazeValueExtractor finish currentPosition path =
       if currentPosition = finish then path
-      else path @ [currentPosition]
-           |> findPath maze finish (findNextPoint mazeValueExtractor currentPosition)
-
-    let private trace maze from finish =
-      findPath maze finish from List.empty
+      else path @ [currentPosition] |> trace mazeValueExtractor finish (findNextPoint mazeValueExtractor currentPosition)
 
     let tracePath (maze: Maze) from finish =
-      if arePointsInMaze maze from finish then Some (trace maze from finish)
-      else None
+      let pointsValid = 
+        isInside maze
+        |> seqValidator [|from; finish|] (&&)
+      
+      if not pointsValid then None
+      else Some (trace (Array2D.get maze) finish from [])

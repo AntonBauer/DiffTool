@@ -6,4 +6,7 @@
     <Compile Include="Types.fs" />
     <Compile Include="LeeAlgorithm.fs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FunctionalUtils\FunctionalUtils.fsproj" />
+  </ItemGroup>
 </Project>

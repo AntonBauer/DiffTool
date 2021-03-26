@@ -12,7 +12,7 @@ let private printPath path =
     | None -> printfn "Not today, boy"
 
 [<EntryPoint>]
-let main argv =
+let main _ =
     (Seq.toArray "Kitten", Seq.toArray "Sitting")
     ||> DiffTool.findDifferences
     |> printPath
