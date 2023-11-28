@@ -1,7 +1,15 @@
 ﻿namespace DiffTool
 
 module Diff =
+    type DiffResult = {
+       Insertions: int array
+       Deletions: int array
+       Substitutions: int array2d
+    }
+    
     type VagnerFisher<'a when 'a:equality> = ('a array) -> ('a array) -> int array2d
+    type Lee = int array2d -> DiffResult
+    type Diff<'a when 'a:equality> = 'a array -> 'a array -> DiffResult
         
     let vagnerFisher: VagnerFisher<'a> = fun firstArray secondArray ->
         let editingMatrix = Array2D.init (firstArray.Length + 1) (secondArray.Length + 1) (fun _ _ -> 0)
